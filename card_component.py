@@ -26,7 +26,7 @@ class CardComponent:
                         url = self.card_data.website_url
                         if url and not url.startswith(('http://', 'https://')):
                             url = 'https://' + url
-                        ui.button('Перейти', on_click=lambda: ui.navigate.to(f'https://{self.card_data.website_url}', new_tab=True), color='blue').props('flat').classes('text-xs w-[60px]')
+                        ui.button('Перейти', on_click=lambda: ui.navigate.to(f'{self.card_data.website_url}', new_tab=True), color='blue').props('flat').classes('text-xs w-[60px]')
 
     def delete_card(self):
         def confirm_delete(confirm_dialog):

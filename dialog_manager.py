@@ -1,6 +1,6 @@
-# В отдельном файле dialog_manager.py
 from nicegui import ui
 from models import Card
+from button_styles import ButtonStyles
 
 class CreateCardDialog:
     def __init__(self, cards, storage, refresh_callback):
@@ -41,5 +41,5 @@ class CreateCardDialog:
                 self.refresh_callback()
                 dialog.close()
 
-            ui.button('Сохранить', on_click=save, color='green')
+            ButtonStyles.make('save', save)
         dialog.open()

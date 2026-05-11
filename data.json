@@ -1,10 +1,10 @@
 [
   {
     "website_name": "mail.ru",
-    "website_url": "mail.ru",
-    "login_name": "needspeed@bk.ru",
+    "website_url": "https://mail.ru",
+    "login_name": "",
     "login": "needspeed@bk.ru",
-    "password": "12345qwer",
-    "comment": "без коментариев\n"
+    "password": "12345",
+    "comment": ""
   }
 ]
